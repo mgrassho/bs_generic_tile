@@ -15,3 +15,95 @@
 	user-select: none;
 	cursor: pointer;
 }
+.generic_tile {
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	box-sizing: border-box;
+	background-position: 0px;
+	border: 1px solid transparent;
+	vertical-align: top;
+	border-radius: 1rem;
+	border-color: transparent;
+	box-shadow: 0 0 .125rem 0 rgba(255, 255, 255, 0.6), 0 .125rem .5rem 0 rgba(0, 0, 0, 0.2);
+
+	width: 11rem;
+	height: 11rem;
+
+	cursor: pointer;
+}
+
+.generic_tile_header {
+	height: 3.625rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-weight: bold;
+	font-size: .875rem;
+}
+
+.gth_subtitle {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-family: "72", "72full", Arial, Helvetica, sans-serif;
+	font-size: .875rem;
+	font-weight: normal;
+	color: #556b82;
+}
+
+.generic_tile_content {
+	height: 6.375rem;
+	display: inline-block;
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.generic_tile_content_inner {
+	height: 2rem;
+	width: 2rem;
+	margin-bottom: 0.25rem;
+	margin-top: 0.25rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	color: #556b82;
+	display: flex;
+	justify-content: flex-start
+}
+
+.gt_content_ft {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	left: 0;
+	box-sizing: border-box;
+	height: 1rem;
+	bottom: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	line-height: normal;
+	font-family: "72", "72full", Arial, Helvetica, sans-serif;
+	font-size: .875rem;
+	font-weight: normal;
+	color: #556b82;
+}
+
+.imageContent {
+	
+	position: relative;
+	vertical-align: bottom;
+	height: 2rem;
+	width: 9rem;
+	outline: none;
+	color: #556b82;
+	text-wrap: nowrap;
+	text-align:left;
+
+
+}

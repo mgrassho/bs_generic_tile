@@ -1,6 +1,14 @@
-<div
-    class="root"
-    @click="{{onClick}}"
->
-    {{counterText}} :: {{count}}
+<div class="generic_tile">
+        <div class="generic_tile_header">
+            <div>{{title}}</div>
+            <div class="gth_subtitle">{{subtitle}}</div>
+        </div>
+        <div class="generic_tile_content">
+            <div class="generic_tile_content_inner">
+                <slot name="displayicon"></slot>
+                <!--<ui5-icon type="Decorative" class="imageContent" name="employee"></ui5-icon>-->
+                
+            </div>
+            <div class="gt_content_ft">{{footer}}</div>
+        </div>
 </div>

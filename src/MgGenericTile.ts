@@ -4,14 +4,13 @@ import property from "@ui5/webcomponents-base/dist/decorators/property.js";
 import litRender from "@ui5/webcomponents-base/dist/renderer/LitRenderer.js";
 import { getI18nBundle } from "@ui5/webcomponents-base/dist/i18nBundle.js";
 import type I18nBundle from "@ui5/webcomponents-base/dist/i18nBundle.js";
+import slot from "@ui5/webcomponents-base/dist/decorators/slot.js";
 
 // Template
 import MgGenericTileTemplate from "./generated/templates/MgGenericTileTemplate.lit.js";
 
 // Styles
 import MgGenericTileCss from "./generated/themes/MgGenericTile.css.js";
-
-import { COUNT } from "./generated/i18n/i18n-defaults.js";
 
 /**
  * @class
@@ -38,20 +37,36 @@ class MgGenericTile extends UI5Element {
 	}
 
 	/**
-	 * Defines the component count.
-	 * @default 0
+	 * Defines the headline of the component
+	 * @default ""
 	 * @public
 	 */
-	@property({ type: Number })
-	count = 0;
+	@property({ type: String })
+	title = ""
 
-	onClick() {
-		this.count++;
-	}
+	/**
+	 * Defines the subtitle of the component
+	 * @default ""
+	 * @public
+	 */
+	@property({ type: String })
+	subtitle = ""
 
-	get counterText() {
-		return MgGenericTile.i18nBundle.getText(COUNT);
-	}
+	/**
+	 * Defines the footer text of the tile
+	 * @default ""
+	 * @public
+	 */
+	@property({ type: String })
+	footer = ""
+
+	/**
+	 * Defines the icon to be discplayed
+	 * e.g. <ui5-icon type="Decorative" class="imageContent" name="employee"></ui5-icon>
+	 * @public
+	 */
+	@slot({ type: HTMLElement })
+    displayicon!: Array<HTMLElement>
 }
 
 MgGenericTile.define();

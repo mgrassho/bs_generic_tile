@@ -7,33 +7,33 @@ import type I18nBundle from "@ui5/webcomponents-base/dist/i18nBundle.js";
 import slot from "@ui5/webcomponents-base/dist/decorators/slot.js";
 
 // Template
-import MgGenericTileTemplate from "./generated/templates/MgGenericTileTemplate.lit.js";
+import BsGenericTileTemplate from "./generated/templates/BSGenericTileTemplate.lit.js";
 
 // Styles
-import MgGenericTileCss from "./generated/themes/MgGenericTile.css.js";
+import BsGenericTileCss from "./generated/themes/BSGenericTile.css.js";
 
 /**
  * @class
  *
  * <h3 class="comment-api-title">Overview</h3>
  *
- * The <code>mg-generic-tile</code> component is a demo component that displays some text.
+ * The <code></code> component is a demo component that displays some text.
  *
  * @constructor
  * @extends UI5Element
  * @public
  */
 @customElement({
-	tag: "mg-generic-tile",
+	tag: "bs-generic-tile",
 	renderer: litRender,
-	styles: MgGenericTileCss,
-	template: MgGenericTileTemplate,
+	styles: BsGenericTileCss,
+	template: BsGenericTileTemplate,
 })
-class MgGenericTile extends UI5Element {
+class BsGenericTile extends UI5Element {
 	static i18nBundle: I18nBundle;
 
 	static async onDefine() {
-		MgGenericTile.i18nBundle = await getI18nBundle("mg_webc_generic_tile");
+		BsGenericTile.i18nBundle = await getI18nBundle("bs_webc_generic_tile");
 	}
 
 	/**
@@ -69,6 +69,6 @@ class MgGenericTile extends UI5Element {
     displayicon!: Array<HTMLElement>
 }
 
-MgGenericTile.define();
+BsGenericTile.define();
 
-export default MgGenericTile;
+export default BsGenericTile;

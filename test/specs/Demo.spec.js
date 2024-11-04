@@ -1,6 +1,6 @@
 const assert = require("assert");
 
-describe("mg-generic-tile rendering", async () => {
+describe("bs-generic-tile rendering", async () => {
 	before(async () => {
 		await browser.url("test/pages/index.html");
 	});

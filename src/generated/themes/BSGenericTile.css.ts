@@ -1,0 +1,13 @@
+import type { StyleData } from "@ui5/webcomponents-base/dist/types.js";
+import { registerThemePropertiesLoader } from "@ui5/webcomponents-base/dist/asset-registries/Themes.js";
+
+import defaultThemeBase from "@ui5/webcomponents-theming/dist/generated/themes/sap_horizon/parameters-bundle.css.js";
+import defaultTheme from "./sap_horizon/parameters-bundle.css.js";
+
+registerThemePropertiesLoader("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+registerThemePropertiesLoader("bs_webc_generic_tile", "sap_horizon", async () => defaultTheme);
+
+const styleData: StyleData = {packageName:"bs_webc_generic_tile",fileName:"themes/BSGenericTile.css.ts",content:`.root{display:inline-flex;align-items:center;justify-content:center;flex-direction:column;padding:0 2rem;color:var(--sapAvatar_6_TextColor);background-color:var(--sapAvatar_6_Background);border:2px solid var(--my-component-border-color);border-radius:.5rem;box-shadow:var(--sapContent_Shadow0);text-align:center;line-height:3rem;font-size:1.25rem;user-select:none;cursor:pointer}.generic_tile{display:inline-block;text-decoration:none;position:relative;box-sizing:border-box;background-position:0px;border:1px solid transparent;vertical-align:top;border-radius:1rem;border-color:transparent;box-shadow:0 0 .125rem #fff9,0 .125rem .5rem #0003;width:11rem;height:11rem;cursor:pointer}.generic_tile:hover{background:var(--sapHoverColor);box-shadow:0 0 0 .0625rem #ffffff59,0 .625rem 1.875rem #0009!important;transition:background .2s}.generic_tile_header{height:3.625rem;padding-top:1rem;padding-left:1rem;padding-right:1rem;font-weight:700;font-size:.875rem}.gth_subtitle{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:"72","72full",Arial,Helvetica,sans-serif;font-size:.875rem;font-weight:400;color:#556b82}.generic_tile_content{height:6.375rem;display:inline-block;white-space:nowrap;overflow:hidden;width:100%;box-sizing:border-box}.generic_tile_content_inner{height:2rem;width:2rem;margin-bottom:.25rem;margin-top:.25rem;padding-left:1rem;padding-right:1rem;color:#556b82;display:flex;justify-content:flex-start}.gt_content_ft{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:right;position:absolute;right:0;left:0;box-sizing:border-box;height:1rem;bottom:1rem;margin-left:1rem;margin-right:1rem;line-height:normal;font-family:"72","72full",Arial,Helvetica,sans-serif;font-size:.875rem;font-weight:400;color:#556b82}::slotted(ui5-icon){position:relative;vertical-align:bottom;height:2rem;width:9rem;outline:none;color:var(--sapContent_NonInteractiveIconColor);text-wrap:nowrap;text-align:left}
+`};
+export default styleData;
+	

@@ -1,5 +1,5 @@
 {
-  "name": "mg_webc_generic_tile",
+  "name": "bs_webc_generic_tile",
   "version": "0.0.1",
   "ui5": {
     "webComponentsPackage": true

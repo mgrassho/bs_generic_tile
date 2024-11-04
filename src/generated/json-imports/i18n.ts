@@ -3,10 +3,10 @@ import { registerI18nLoader } from "@ui5/webcomponents-base/dist/asset-registrie
 
 const importMessageBundle = async (localeId) => {
 	switch (localeId) {
-				case "de": return (await import(/* webpackChunkName: "mg_webc_generic_tile-messagebundle-de" */ "../assets/i18n/messagebundle_de.json")).default;
-		case "en": return (await import(/* webpackChunkName: "mg_webc_generic_tile-messagebundle-en" */ "../assets/i18n/messagebundle_en.json")).default;
-		case "es": return (await import(/* webpackChunkName: "mg_webc_generic_tile-messagebundle-es" */ "../assets/i18n/messagebundle_es.json")).default;
-		case "fr": return (await import(/* webpackChunkName: "mg_webc_generic_tile-messagebundle-fr" */ "../assets/i18n/messagebundle_fr.json")).default;
+				case "de": return (await import(/* webpackChunkName: "bs_webc_generic_tile-messagebundle-de" */ "../assets/i18n/messagebundle_de.json")).default;
+		case "en": return (await import(/* webpackChunkName: "bs_webc_generic_tile-messagebundle-en" */ "../assets/i18n/messagebundle_en.json")).default;
+		case "es": return (await import(/* webpackChunkName: "bs_webc_generic_tile-messagebundle-es" */ "../assets/i18n/messagebundle_es.json")).default;
+		case "fr": return (await import(/* webpackChunkName: "bs_webc_generic_tile-messagebundle-fr" */ "../assets/i18n/messagebundle_fr.json")).default;
 		default: throw "unknown locale"
 	}
 }
@@ -25,5 +25,5 @@ const localeIds = ["de",
 	"fr",];
 
 localeIds.forEach(localeId => {
-	registerI18nLoader("mg_webc_generic_tile", localeId, importAndCheck);
+	registerI18nLoader("bs_webc_generic_tile", localeId, importAndCheck);
 });

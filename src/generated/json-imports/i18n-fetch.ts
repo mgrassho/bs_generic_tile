@@ -25,5 +25,5 @@ const localeIds = ["de",
 	"fr",];
 
 localeIds.forEach(localeId => {
-	registerI18nLoader("mg_webc_generic_tile", localeId, importAndCheck);
+	registerI18nLoader("bs_webc_generic_tile", localeId, importAndCheck);
 });

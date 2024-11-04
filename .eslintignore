@@ -1,13 +1,19 @@
 # Note: Changes to this file also must be applied to the top level .eslintignore file.
-target
+test
+lib
 dist
 src/generated
-lib
-test
-bundle.*.js
+test/test-elements/generated
+src/thirdparty
+bundle.esm.js
+bundle.es5.js
 rollup.config*.js
 wdio.conf.cjs
 cypress.config.js
 postcss.config.cjs
 package-scripts.cjs
 .eslintrc.cjs
+src/renderer/directives/style-map.js
+src/util/metaUrl.js
+src/ssr-dom*
+index.js

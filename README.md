@@ -6,12 +6,34 @@
 
  ![Tile example](./docs/assets/tile_example.png)
 
+## Usage
+
+1. Import the component from npm into your project
+
+```bash
+ npm install @devbytesorcery/bs_webc_generic_tile
+```
+
+1. import the component into your website as a dependency
+
+```javascript
+import "@devbytesorcery/bs_webc_generic_tile/dist/BSGenericTile.js";
+````
+
+1. use the new webcomponent anywhere in your app
+
+```html
+    <bs-generic-tile id="myFirstComponent" title="Title 1" subtitle="Subtitle" footer="EUR">
+        <ui5-icon slot="displayicon" type="Decorative"  name="retail-store"></ui5-icon>
+	</bs-generic-tile>
+```
+
 ## Open Tasks
 
 - [ ] Write tests
 - [X] Add hover effect
 - [ ] Add loading state behavior?
-- [ ] Fix icon position
+- [X] Fix icon position
 - [ ] Add pressed state
 - [ ] Clean up css
 

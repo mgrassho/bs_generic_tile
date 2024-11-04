@@ -34,3 +34,13 @@ a {
 	margin: 0.25rem;
 	color: var(--sapLinkColor);
 }
+
+.grid_layout {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-template-rows: repeat(2, 1fr); 
+	gap: 10px; 
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
+}

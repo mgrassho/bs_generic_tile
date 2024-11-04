@@ -6,6 +6,15 @@
 
  ![Tile example](./docs/assets/tile_example.png)
 
+## Open Tasks
+
+- [ ] Write tests
+- [X] Add hover effect
+- [ ] Add loading state behavior?
+- [ ] Fix icon position
+- [ ] Add pressed state
+- [ ] Clean up css
+
 ## Project Setup Notes
 
 When creating the project by

@@ -1,7 +1,8 @@
 {
-  "name": "bs_webc_generic_tile",
-  "version": "0.0.1",
+  "name": "@devbytesorcery/bs_webc_generic_tile",
+  "version": "0.0.2",
   "author": "Martin Grasshoff",
+  "license": "Apache-2.0",
   "homepage": "https://webcomponents.byte-sorcery.net",
   "keywords": [
     "ui5",
@@ -45,5 +46,14 @@
     "@ui5/webcomponents-tools": "2.3.0",
     "chromedriver": "*",
     "typescript": "^5.6.2"
+  },
+  "description": "Fiori-like generic tile based on UI5 Webcomponents",
+  "main": "bundle.esm.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "bugs": {
+    "url": "https://github.com/mgrassho/bs_generic_tile/issues"
   }
 }

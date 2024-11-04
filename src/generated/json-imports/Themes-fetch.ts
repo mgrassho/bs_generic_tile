@@ -21,4 +21,4 @@ const loadAndCheck = async (themeName) => {
 };
 
 ["sap_fiori_3", "sap_horizon", "sap_horizon_dark", "sap_horizon_hcb", "sap_horizon_hcw"]
-  .forEach(themeName => registerThemePropertiesLoader("bs_webc_generic_tile", themeName, loadAndCheck));
+  .forEach(themeName => registerThemePropertiesLoader("@devbytesorcery/bs_webc_generic_tile", themeName, loadAndCheck));

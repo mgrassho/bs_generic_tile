@@ -11,14 +11,24 @@
 1. Import the component from npm into your project
 
 ```bash
- npm install @devbytesorcery/bs_webc_generic_tile
+ npm i @devbytesorcery/bs_webc_generic_tile
 ```
 
-1. import the component into your website as a dependency
+1. Import the component into your website as a dependency
 
 ```javascript
+<script type="module">
+
+import "@ui5/webcomponents/dist/Icon.js";
+import "@ui5/webcomponents-icons/dist/employee.js";
+import "@ui5/webcomponents-icons/dist/account.js";
+import "@ui5/webcomponents-icons/dist/cart.js";
+import "@ui5/webcomponents-icons/dist/retail-store.js";
+
 import "@devbytesorcery/bs_webc_generic_tile/dist/BSGenericTile.js";
-````
+
+</script>
+```
 
 1. use the new webcomponent anywhere in your app
 
@@ -39,7 +49,7 @@ import "@devbytesorcery/bs_webc_generic_tile/dist/BSGenericTile.js";
 
 ## Project Setup Notes
 
-When creating the project by
+When creating a new webcomponent using
 
 ```bash
     npm init @ui5/webcomponents-package

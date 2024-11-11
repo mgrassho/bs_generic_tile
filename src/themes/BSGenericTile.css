@@ -109,3 +109,8 @@
 	text-wrap: nowrap;
 	text-align:left;
 }
+
+:host(:focus) {
+	outline: none;
+	outline-color: initial;
+}

@@ -44,7 +44,7 @@ import "@devbytesorcery/bs_webc_generic_tile/dist/BSGenericTile.js";
 - [X] Add hover effect
 - [ ] Add loading state behavior?
 - [X] Fix icon position
-- [ ] Add pressed state
+- [X] Add focusable
 - [ ] Clean up css
 
 ## Project Setup Notes

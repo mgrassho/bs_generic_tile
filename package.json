@@ -38,14 +38,13 @@
     "./*": "./dist/*"
   },
   "dependencies": {
-    "@ui5/webcomponents": "2.3.0",
-    "@ui5/webcomponents-base": "2.3.0",
-    "@ui5/webcomponents-icons": "2.3.0",
-    "@ui5/webcomponents-theming": "2.3.0"
+    "@ui5/webcomponents": "2.4.0",
+    "@ui5/webcomponents-base": "2.4.0",
+    "@ui5/webcomponents-icons": "2.4.0",
+    "@ui5/webcomponents-theming": "2.4.0"
   },
   "devDependencies": {
-    "@ui5/webcomponents-tools": "2.3.0",
-    "chromedriver": "*",
+    "@ui5/webcomponents-tools": "2.4.0",
     "cypress": "^13.15.2",
     "cypress-real-events": "^1.13.0",
     "typescript": "^5.6.2",

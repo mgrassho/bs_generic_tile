@@ -48,11 +48,6 @@
     "typescript": "^5.6.2"
   },
   "description": "Fiori-like generic tile based on UI5 Webcomponents",
-  "main": "bundle.esm.js",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  },
   "bugs": {
     "url": "https://github.com/mgrassho/bs_generic_tile/issues"
   }

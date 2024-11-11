@@ -40,7 +40,7 @@ import "@devbytesorcery/bs_webc_generic_tile/dist/BSGenericTile.js";
 
 ## Open Tasks
 
-- [ ] Write tests
+- [X] Write tests
 - [X] Add hover effect
 - [ ] Add loading state behavior?
 - [X] Fix icon position

@@ -1,11 +1,9 @@
 {
-	"extends": "@ui5/webcomponents-tools/tsconfig.json",
-	"include": [
-		"src/**/*",
-		"global.d.ts"
-	],
-	"compilerOptions": {
-		"outDir": "dist",
-		"experimentalDecorators": true,
-	},
+  "extends": "@ui5/webcomponents-tools/tsconfig.json",
+  "include": ["src/**/*", "global.d.ts"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "types": ["cypress", "node", "cypress-real-events"]
+  }
 }

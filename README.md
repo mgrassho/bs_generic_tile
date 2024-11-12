@@ -33,9 +33,9 @@ import "@devbytesorcery/bs_webc_generic_tile/dist/BSGenericTile.js";
 1. use the new webcomponent anywhere in your app
 
 ```html
-    <bs-generic-tile id="myFirstComponent" title="Title 1" subtitle="Subtitle" footer="EUR">
-        <ui5-icon slot="displayicon" type="Decorative"  name="retail-store"></ui5-icon>
-	</bs-generic-tile>
+<bs-generic-tile id="myFirstComponent" title="Title 1" subtitle="Subtitle" footer="EUR">
+    <ui5-icon slot="displayicon" type="Decorative"  name="retail-store"></ui5-icon>
+</bs-generic-tile>
 ```
 
 ## Open Tasks
@@ -45,11 +45,12 @@ import "@devbytesorcery/bs_webc_generic_tile/dist/BSGenericTile.js";
 - [ ] Add loading state behavior?
 - [X] Fix icon position
 - [X] Add focusable
+- [X] Add activate with "Space" or "Enter" key
 - [ ] Clean up css
 
-## Project Setup Notes
+## Project Setup Notes for Creating New Components
 
-When creating a new webcomponent using
+When creating a new webcomponent using - other than the existing Generic Tile!
 
 ```bash
     npm init @ui5/webcomponents-package

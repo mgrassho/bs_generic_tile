@@ -15,9 +15,11 @@ describe('tile events should be tested', () => {
     cy.get('@tile')
       .realPress("Space")
   
+    cy.get('@tile')
+      .realPress("Enter")
 
     cy.get("@clicked")
-			.should("have.been.calledTwice")
+			.should("have.been.calledThrice")
 
     cy.get('@tile').focus
     

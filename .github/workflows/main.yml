@@ -10,9 +10,17 @@ jobs:
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
+      - run: npm run build
+      - run: npm start
+      - name: Wait for server to start
+        uses: emilioschepis/wait-for-endpoint@v1.0.3
+        with:
+          url: http://localhost:8080
+          method: GET
+          expected-status: 200
+          timeout: 60000
+          interval: 1000
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
-          build: npm run build
-          start: sleep 10 && npm start
